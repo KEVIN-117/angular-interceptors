@@ -1,0 +1,5 @@
+<ul class="grid grid-cols-3 place-items-center gap-20 py-20">
+  @for (item of characters; track item.id){
+    <app-character-item [character]="item" />
+  }
+</ul>

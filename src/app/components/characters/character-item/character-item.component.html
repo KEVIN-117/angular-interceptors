@@ -1,0 +1,12 @@
+@if(character){
+  <a [routerLink]="['/characters/', character.id]" class="text-center border group py-10 px-5 rounded-xl border-slate-400 shadow-2xl shadow-slate-400">
+    <h1
+      class="text-xl text-gray-50 font-bold"
+    >{{character.name}}</h1>
+    <img class="group-hover:scale-110 transition-all ease-in-out w-[20rem] h-[30rem]" src="{{character.image}}" [alt]="character.name">
+  </a>
+} @else {
+  <div>
+    <h1>Character not found</h1>
+  </div>
+}
