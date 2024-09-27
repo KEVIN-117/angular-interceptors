@@ -1,0 +1,11 @@
+<main class="grid grid-cols-1 h-full text-center py-20">
+  <h1 class="text-[#f9fafb]">Welcome to the Home Page</h1>
+  <p class="text-[#f9fafb]">This is a simple home page</p>
+  <div class="w-[90%] mx-auto">
+    <app-characters [characters]="characters" />
+  </div>
+  <div class="flex justify-center items-center gap-20">
+    <button class="bg-slate-900 active:bg-slate-700 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:active:bg-sky-400" (click)="changePreviousPage()">Prev</button>
+    <button class="bg-slate-900 active:bg-slate-700 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:active:bg-sky-400" (click)="changeNextPage()">Next</button>
+  </div>
+</main>
